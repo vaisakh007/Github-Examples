@@ -2,13 +2,13 @@ name: "Multiple Job Example"
 on: ["push"]
 jobs:
   job-one:
-    runs-on: ubuntu latest
+    runs-on: ubuntu-latest
     name: job1
     steps:
     - name: display message
       run: echo "hello from job-one"
   job-two:
-    runs-on: ubuntu latest
+    runs-on: ubuntu-latest
     steps:
     - name: display message
       run: echo "hello from job-two"  
