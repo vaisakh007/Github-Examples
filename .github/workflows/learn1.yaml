@@ -9,6 +9,7 @@ jobs:
       run: echo "hello from job-one"
   job-two:
     runs-on: ubuntu-latest
+    needs: [job-one]
     steps:
     - name: display message
       run: echo "hello from job-two"  
